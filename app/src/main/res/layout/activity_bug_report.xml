@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bug_report"
+    android:background="@drawable/directmessage"
+    >
+
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:background="@drawable/backgroundforward"
+        android:layout_centerInParent="true"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="if you are facing any type of error or found any bugs kindly contact me on mail.please kindly provide the screenshot and write cause of the error it will help fix the error eaily and quickly. ask me for the new feature requests.
+        \n EMAIL-subhambikashbehera@gmail.com"/>
+</RelativeLayout>

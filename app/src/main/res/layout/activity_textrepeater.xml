@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Textrepeater"
+    android:background="#B41AD6"
+    >
+    <TextView
+        android:id="@+id/mMMSK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="#FA0606"
+        android:text="TEXT REPEATER"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:background="#050505"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold" />
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/mMMSK"
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:paddingLeft="8dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        app:cardElevation="20dp"
+        >
+        <LinearLayout
+            android:id="@+id/firstlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+
+            >
+
+
+            <EditText
+                android:id="@+id/input_text"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backupper"
+                android:ems="10"
+                android:hint="Enter Text"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp"
+                android:scrollbarThumbHorizontal="@color/purple_700"
+                android:scrollbarThumbVertical="@color/purple_700"
+                android:textColor="#0C0C0C"
+                android:textColorHint="#0B0B0B" />
+
+            <EditText
+                android:id="@+id/input_number"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/backupper"
+                android:ems="10"
+                android:hint="Repetition Limit"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:textColor="#0C0C0C"
+                android:textColorHint="#090808" />
+
+            <LinearLayout
+
+                android:id="@+id/secondlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:shadowColor="#BD0B0B"
+                    android:text="New Line"
+                    android:textColor="#0A0B0A"
+                    android:textColorHint="#AC0303"
+                    app:useMaterialThemeColors="true" />
+
+                <Button
+                    android:id="@+id/generate"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+
+                    android:text="GENERATE"
+
+                    android:textColor="#F6F0F0"
+                    android:textSize="12dp"
+                    app:backgroundTint="#03116C" />
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:text="RESET"
+                    android:textColor="#E3DADA"
+                    android:textSize="12dp"
+                    app:backgroundTint="#03116C" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/card2"
+        android:layout_below="@+id/card1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:cardElevation="9dp"
+        app:cardCornerRadius="13dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/white"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#fff"
+            >
+
+            <RelativeLayout
+                android:id="@+id/output_relative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/input_main"
+                android:layout_marginTop="10dp"
+                >
+
+
+                <ImageButton
+                    android:id="@+id/copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_content_copy_24"
+                    android:layout_toLeftOf="@+id/share"
+                    />
+                <ImageButton
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_share_24"
+                    android:layout_alignParentRight="true"
+
+                    />
+                <ImageButton
+                    android:id="@+id/whatsapp"
+                    android:layout_toLeftOf="@+id/copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/whatsapp2"
+
+                    />
+
+
+                <EditText
+                    android:layout_below="@+id/share"
+                    android:id="@+id/output_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="5dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_layout"
+    android:background="#070707"
+    tools:context=".Scan">
+
+    <TextView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="SCANNER"
+        android:textColor="#fff"
+        android:textSize="@dimen/_20sdp"
+        android:id="@+id/scannertext"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:layout_below="@+id/scannertext"
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:background="#78CCF4"
+            android:gravity="left"
+            android:inputType="textMultiLine"
+            android:paddingLeft="15dp"
+            android:paddingTop="50dp"
+            android:textColor="#0B0A0A"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_baseline_share_24" />
+
+        <ImageButton
+            android:id="@+id/copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_toLeftOf="@+id/share"
+            android:src="@drawable/ic_baseline_content_copy_24" />
+
+        <ImageButton
+            android:id="@+id/whatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_toLeftOf="@+id/copy"
+            android:src="@drawable/whatsapp2" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/result"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="RESET" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="SCAN QR AND BARCODE" />
+
+
+</RelativeLayout>
